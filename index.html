@@ -206,7 +206,7 @@
 <tr><td>4. 得意な技術・分野について</td><td>Python（Flask）・React／TypeScript・<br>PostgreSQL・GAS・Docker・GitHub Actions。<br>AI（Claude Code）を使った調査と改修も日常的に行っています。</td></tr>
 <tr><td>5. 運用保守しているシステムについて</td><td>上記のWebサービス、GA4×BigQueryの分析基盤（2件）、<br>稼働中のGAS製サービス（認可・個人情報のマスキングを後から追加）。</td></tr>
 <tr><td>6. 稼働できる時間・頻度について</td><td>平日日中・週10〜20時間が目安です。<br>急ぎの時は当日中にご連絡し、長い休みは事前にお知らせします。</td></tr>
-<tr><td>7. ご希望の報酬・契約条件について</td><td>月額12万円（税別・月20時間目安）を基本に、<br>1時間6,500円の時間精算もお選びいただけます（下の図2）。</td></tr>
+<tr><td>7. ご希望の報酬・契約条件について</td><td>月額12万円（税別・月20時間目安）を基本に、<br>1時間6,500円の時間精算もお選びいただけます（③の費用欄）。</td></tr>
 <tr><td>8. 再委託の有無</td><td><b>ありません。</b>当方1名で担当します。</td></tr>
         </tbody>
       </table>
@@ -219,85 +219,102 @@
 <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" aria-hidden="true"><path d="M5 3l10 9-4.5 1.5L13 19l-2.5 1-2.5-5.5L5 18z" stroke-linejoin="round"/></svg>
 箱にマウスを合わせる（スマートフォンは指で押す）と、補足が出ます。
 </p>
-<h3>図1　ご依頼の業務が、毎月どう回るか</h3>
+<h3>図1　不具合が起きてから直るまで</h3>
 <div class="figure">
 <div class="svg-holder">
-<svg viewBox="0 0 1600 900" role="img" aria-label="ご連絡を受けてから、切り分け、直し方のご提示、修正、本番反映、月1のご報告までを1か月で回す流れの図">
+<svg viewBox="0 0 1600 780" role="img" aria-label="ご連絡の受付から本番反映までを時間の軸で示し、受付はその日のうち、一次回答は遅くとも翌営業日と約束する図">
 <defs><marker id="g1a" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 Z" fill="#D4AF37"/></marker></defs>
-<g class="node" tabindex="0" data-name="ご連絡を受ける" data-tip="チャットでご連絡を受け付けます。平日日中は当日中、遅くとも翌営業日までに一次回答いたします。">
-  <rect class="box" x="60" y="130" width="440" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(86,148)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></g>
-  <text x="86" y="282" fill="#F2F4F7" font-size="30" font-weight="700">① ご連絡を受ける</text>
-  <text x="86" y="326" fill="#C3CDD9" font-size="26">チャットで受付</text>
+<path d="M40,380 L1560,380" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g1a)"/>
+<g class="node" tabindex="0" data-name="ご連絡" data-tip="チャットでご連絡を受け付けます。不具合でも、ちょっとしたご相談でも同じ窓口です。">
+  <rect class="box" x="60" y="60" width="300" height="230" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(82,78)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></g>
+  <text x="82" y="206" fill="#F2F4F7" font-size="28" font-weight="700">① ご連絡</text>
+  <text x="82" y="250" fill="#C3CDD9" font-size="24">チャットで受付</text>
 </g>
-<g class="node" tabindex="0" data-name="再現して切り分ける" data-tip="まず同じ現象を再現し、画面・サーバー・データのどこで起きているかを切り分けます。原因が分かるまで推測で直しません。">
-  <rect class="box" x="580" y="130" width="440" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(606,148)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></g>
-  <text x="606" y="282" fill="#F2F4F7" font-size="30" font-weight="700">② 再現・切り分け</text>
-  <text x="606" y="326" fill="#C3CDD9" font-size="26">原因の場所を特定</text>
+<line x1="210" y1="290" x2="210" y2="372" stroke="#6C7A8C" stroke-width="2"/>
+<circle cx="210" cy="380" r="9" fill="#D4AF37"/>
+<g class="node" tabindex="0" data-name="一次回答" data-tip="受け付けた内容と、次に何をするかを遅くとも翌営業日までにお返事します。">
+  <rect class="box" x="360" y="470" width="300" height="230" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(382,488)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></g>
+  <text x="382" y="616" fill="#F2F4F7" font-size="28" font-weight="700">② 一次回答</text>
+  <text x="382" y="660" fill="#C3CDD9" font-size="24">何を調べるかをお返事</text>
 </g>
-<g class="node" tabindex="0" data-name="直し方をご提示" data-tip="原因と直し方、かかる時間、影響する範囲を1枚でお伝えします。進めるかどうかは御社にご判断いただきます。">
-  <rect class="box" x="1100" y="130" width="440" height="240" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
-  <g transform="translate(1126,148)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/></svg></g>
-  <text x="1126" y="282" fill="#F2F4F7" font-size="30" font-weight="700">③ 直し方をご提示</text>
-  <text x="1126" y="326" fill="#C3CDD9" font-size="26">進めるかは御社が判断</text>
+<line x1="510" y1="388" x2="510" y2="470" stroke="#6C7A8C" stroke-width="2"/>
+<circle cx="510" cy="380" r="9" fill="#D4AF37"/>
+<g class="node" tabindex="0" data-name="再現・切り分け" data-tip="同じ現象を再現し、画面・サーバー・データのどこで起きているかを特定します。推測で直しません。">
+  <rect class="box" x="660" y="60" width="300" height="230" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(682,78)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></g>
+  <text x="682" y="206" fill="#F2F4F7" font-size="28" font-weight="700">③ 再現・切り分け</text>
+  <text x="682" y="250" fill="#C3CDD9" font-size="24">原因の場所を特定</text>
 </g>
-<g class="node" tabindex="0" data-name="直す" data-tip="既存の書き方に合わせて最小限の修正を入れ、Gitで履歴を残します。AI（Claude Code）も使って調査と修正を速めます。">
-  <rect class="box" x="60" y="560" width="440" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(86,578)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3l3 3-9 9-3-3z"/><path d="M9 12c-3 0-5 2-5 5 0 2-1 3-2 4 4 0 8-1 9-4z"/></svg></g>
-  <text x="86" y="712" fill="#F2F4F7" font-size="30" font-weight="700">④ 直す</text>
-  <text x="86" y="756" fill="#C3CDD9" font-size="26">Gitで履歴を残す</text>
+<line x1="810" y1="290" x2="810" y2="372" stroke="#6C7A8C" stroke-width="2"/>
+<circle cx="810" cy="380" r="9" fill="#D4AF37"/>
+<g class="node" tabindex="0" data-name="直し方のご判断" data-tip="原因・直し方・かかる時間・影響する範囲を1枚でお伝えします。進めるかどうかは御社がお決めください。">
+  <rect class="box" x="960" y="470" width="300" height="230" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
+  <g transform="translate(982,488)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/></svg></g>
+  <text x="982" y="616" fill="#F2F4F7" font-size="28" font-weight="700">④ 直し方のご判断</text>
+  <text x="982" y="660" fill="#C3CDD9" font-size="24">進めるかは御社が決定</text>
 </g>
-<g class="node" tabindex="0" data-name="本番へ反映" data-tip="動作確認のあと、御社のご了承をいただいてから本番へ反映します。万一に備え、元へ戻す手順を先に用意します。">
-  <rect class="box" x="580" y="560" width="440" height="240" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
-  <g transform="translate(606,578)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z"/><circle cx="15" cy="9" r="1.5"/></svg></g>
-  <text x="606" y="712" fill="#F2F4F7" font-size="30" font-weight="700">⑤ 本番へ反映</text>
-  <text x="606" y="756" fill="#C3CDD9" font-size="26">ご了承を得てから</text>
+<line x1="1110" y1="388" x2="1110" y2="470" stroke="#6C7A8C" stroke-width="2"/>
+<circle cx="1110" cy="380" r="9" fill="#D4AF37"/>
+<g class="node" tabindex="0" data-name="本番へ反映" data-tip="動作を確かめ、御社のご了承をいただいてから本番へ反映します。元に戻す手順も先に用意します。">
+  <rect class="box" x="1260" y="60" width="300" height="230" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
+  <g transform="translate(1282,78)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z"/><circle cx="15" cy="9" r="1.5"/></svg></g>
+  <text x="1282" y="206" fill="#F2F4F7" font-size="28" font-weight="700">⑤ 本番へ反映</text>
+  <text x="1282" y="250" fill="#C3CDD9" font-size="24">ご了承を得てから</text>
 </g>
-<g class="node" tabindex="0" data-name="月1のご報告" data-tip="その月に対応した一覧と使った時間、次に直したい所をまとめてお渡しします。">
-  <rect class="box" x="1100" y="560" width="440" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(1126,578)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></g>
-  <text x="1126" y="712" fill="#F2F4F7" font-size="30" font-weight="700">⑥ 月1のご報告</text>
-  <text x="1126" y="756" fill="#C3CDD9" font-size="26">対応一覧と使った時間</text>
-</g>
-<path d="M504,250 L570,250" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g1a)"/>
-<path d="M1024,250 L1090,250" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g1a)"/>
-<path d="M1320,374 L1320,470 L280,470 L280,548" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g1a)"/>
-<path d="M504,680 L570,680" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g1a)"/>
-<path d="M1024,680 L1090,680" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g1a)"/>
-<text x="60" y="428" fill="#9AA7B4" font-size="24">※ 一次回答は、遅くとも翌営業日までにいたします。</text>
-<text x="60" y="860" fill="#5FB894" font-size="24">緑の枠＝御社にご判断いただく所です。当方の判断だけで本番へ反映しません。</text>
+<line x1="1410" y1="290" x2="1410" y2="372" stroke="#6C7A8C" stroke-width="2"/>
+<circle cx="1410" cy="380" r="9" fill="#D4AF37"/>
+<text x="226" y="346" fill="#D4AF37" font-size="24" font-weight="700">その日のうちに受付</text>
+<text x="526" y="436" fill="#D4AF37" font-size="24" font-weight="700">遅くとも翌営業日</text>
+<text x="60" y="758" fill="#5FB894" font-size="24">緑の枠＝御社にお決めいただく所です。当方の判断だけで本番へ反映しません。</text>
 </svg>
 </div>
 </div>
-<h3>図2　毎月の費用の決め方</h3>
+<h3>図2　御社と当方の役割分担</h3>
 <div class="figure">
 <div class="svg-holder">
-<svg viewBox="0 0 1500 640" role="img" aria-label="月額固定と時間精算の2つの形を比べ、最初の1か月の実績を見てから選んでいただく図">
+<svg viewBox="0 0 1600 780" role="img" aria-label="上の列が御社、下の列が当方。御社のお手間はご連絡・進め方のご判断・本番反映のご了承の3つだけで、残りは当方が進める図">
 <defs><marker id="g2a" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 Z" fill="#D4AF37"/></marker></defs>
-<g class="node" tabindex="0" data-name="案A 月額固定" data-tip="月20時間を目安にした月額です。使わなかった時間は翌月へ1か月だけ繰り越せます。毎月の費用が読みやすい形です。">
-  <rect class="box" x="70" y="50" width="520" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(96,68)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></g>
-  <text x="96" y="202" fill="#F2F4F7" font-size="28" font-weight="700">案A　月額固定</text>
-  <text x="96" y="246" fill="#5FB894" font-size="23">月12万円・20時間目安</text>
+<rect x="20" y="30" width="1560" height="300" rx="12" fill="rgba(95,184,148,.06)"/>
+<rect x="20" y="410" width="1560" height="300" rx="12" fill="rgba(212,175,55,.05)"/>
+<text x="44" y="190" fill="#5FB894" font-size="30" font-weight="700">御社</text>
+<text x="44" y="570" fill="#D4AF37" font-size="30" font-weight="700">当方</text>
+<g class="node" tabindex="0" data-name="ご連絡" data-tip="不具合やご相談を、チャットで1行お送りいただくだけで構いません。">
+  <rect class="box" x="170" y="70" width="270" height="220" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
+  <g transform="translate(190,86)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></g>
+  <text x="190" y="210" fill="#F2F4F7" font-size="27" font-weight="700">ご連絡</text>
+  <text x="190" y="252" fill="#C3CDD9" font-size="23">チャットで1行でも</text>
 </g>
-<g class="node" tabindex="0" data-name="案B 時間精算" data-tip="1時間6,500円で、使った分だけお支払いいただきます。月の上限時間は先に取り決めます。">
-  <rect class="box" x="70" y="350" width="520" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(96,368)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></g>
-  <text x="96" y="502" fill="#F2F4F7" font-size="28" font-weight="700">案B　時間精算</text>
-  <text x="96" y="546" fill="#C3CDD9" font-size="23">1時間6,500円・上限あり</text>
+<g class="node" tabindex="0" data-name="進め方のご判断" data-tip="当方がお出しする1枚（原因・直し方・時間・影響）を見て、直すかどうか・いつ直すかをお決めいただきます。">
+  <rect class="box" x="760" y="70" width="270" height="220" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
+  <g transform="translate(780,86)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M7 21h10"/><path d="M3 7h3c2 0 4-1 6-2 2 1 4 2 6 2h3"/><path d="M6 7l-3 7c.9.7 1.9 1 3 1s2.1-.3 3-1z"/><path d="M18 7l-3 7c.9.7 1.9 1 3 1s2.1-.3 3-1z"/></svg></g>
+  <text x="780" y="210" fill="#F2F4F7" font-size="27" font-weight="700">進め方のご判断</text>
+  <text x="780" y="252" fill="#C3CDD9" font-size="23">直すか・いつ直すか</text>
 </g>
-<g class="node" tabindex="0" data-name="決め方" data-tip="最初の1か月は棚卸しに使い、実際にかかった時間を記録してお渡しします。その数字を見てから、案Aか案Bかを決めていただけます。">
-  <rect class="box" x="760" y="140" width="660" height="360" rx="10" fill="rgba(212,175,55,.06)" stroke="#D4AF37" stroke-width="2.5"/>
-  <g transform="translate(786,158)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M7 21h10"/><path d="M3 7h3c2 0 4-1 6-2 2 1 4 2 6 2h3"/><path d="M6 7l-3 7c.9.7 1.9 1 3 1s2.1-.3 3-1z"/><path d="M18 7l-3 7c.9.7 1.9 1 3 1s2.1-.3 3-1z"/></svg></g>
-  <text x="786" y="300" fill="#D4AF37" font-size="27" font-weight="700">決め方</text>
-  <text x="786" y="350" fill="#F2F4F7" font-size="23">最初の1か月で使った時間を見て、</text>
-  <text x="786" y="394" fill="#F2F4F7" font-size="23">A・Bのどちらかを選んでいただきます。</text>
-  <text x="786" y="448" fill="#C3CDD9" font-size="23">ご予算に合わせて時間の調整もできます。</text>
+<g class="node" tabindex="0" data-name="本番反映のご了承" data-tip="動作を確かめた結果をお伝えし、本番へ反映してよいかをお返事いただきます。">
+  <rect class="box" x="1300" y="70" width="270" height="220" rx="10" fill="#111825" stroke="#5FB894" stroke-width="2.5"/>
+  <g transform="translate(1320,86)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="1320" y="210" fill="#F2F4F7" font-size="27" font-weight="700">反映のご了承</text>
+  <text x="1320" y="252" fill="#C3CDD9" font-size="23">反映してよいか</text>
 </g>
-<path d="M594,170 L750,250" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g2a)"/>
-<path d="M594,470 L750,390" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g2a)"/>
-<text x="70" y="630" fill="#9AA7B4" font-size="24">※ 例: 月10時間なら月6万円。どちらの形でも途中で切り替えられます。</text>
+<g class="node" tabindex="0" data-name="再現・切り分け" data-tip="現象を再現し、原因の場所を特定します。構成が分からない所は、初月の棚卸しで一覧にします。">
+  <rect class="box" x="465" y="450" width="270" height="220" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(485,466)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></g>
+  <text x="485" y="590" fill="#F2F4F7" font-size="27" font-weight="700">再現・切り分け</text>
+  <text x="485" y="632" fill="#C3CDD9" font-size="23">原因を特定して1枚に</text>
+</g>
+<g class="node" tabindex="0" data-name="修正と確認" data-tip="既存の書き方に合わせて最小限の修正を入れ、Gitで履歴を残し、動作を確かめます。">
+  <rect class="box" x="1030" y="450" width="270" height="220" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(1050,466)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3l3 3-9 9-3-3z"/><path d="M9 12c-3 0-5 2-5 5 0 2-1 3-2 4 4 0 8-1 9-4z"/></svg></g>
+  <text x="1050" y="590" fill="#F2F4F7" font-size="27" font-weight="700">修正と確認</text>
+  <text x="1050" y="632" fill="#C3CDD9" font-size="23">Gitで履歴を残す</text>
+</g>
+<path d="M400,294 L520,442" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g2a)"/>
+<path d="M690,446 L800,298" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g2a)"/>
+<path d="M990,294 L1085,442" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g2a)"/>
+<path d="M1260,446 L1350,298" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g2a)"/>
+<text x="44" y="760" fill="#5FB894" font-size="24">御社のお手間は緑の3つだけです。月1回、対応した一覧と使った時間をお渡しします。</text>
 </svg>
 </div>
 </div>
@@ -305,33 +322,108 @@
 
   <section id="ch3">
     <h2><span class="step">&#9314;</span>月額12万円の中身</h2>
-<h3>図3　ご依頼の10の業務を、今回どう分けるか</h3>
+<h3>図3　ご依頼の10業務を、どう受けるか</h3>
 <div class="figure">
 <div class="svg-holder">
-<svg viewBox="0 0 1500 860" role="img" aria-label="ご依頼の10の業務を、月額12万円で入る8つ、難しい1つ、別途1つに分けた図">
-<g class="node" tabindex="0" data-name="入る範囲（月額12万円）" data-tip="運用・保守／不具合の原因調査と対応／軽微なプログラム修正／既存機能の改善／動作確認・テスト／セキュリティと安定稼働の確認／ユーザーから報告された不具合の対応／機能追加・改善の技術的なご相談。月20時間が目安です。">
-  <rect class="box" x="70" y="50" width="1360" height="290" rx="10" fill="rgba(212,175,55,.09)" stroke="#D4AF37" stroke-width="3"/>
-  <g transform="translate(100,72)"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
-  <text x="184" y="118" fill="#D4AF37" font-size="34" font-weight="700">入る範囲（8つ）</text>
-  <text x="1060" y="118" fill="#D4AF37" font-size="30" font-weight="700">月額12万円</text>
-  <text x="100" y="186" fill="#F2F4F7" font-size="24">運用・保守／原因調査と対応／軽微な修正／既存機能の改善</text>
-  <text x="100" y="230" fill="#F2F4F7" font-size="24">動作確認・テスト／セキュリティ確認／ユーザー報告の不具合／技術相談</text>
-  <text x="100" y="298" fill="#5FB894" font-size="24">ご満足いただけなければ全額返金いたします。</text>
+<svg viewBox="0 0 1500 1200" role="img" aria-label="ご依頼の10の業務を募集本文のまま並べ、8つが月額に含まれ、サーバーの運用対応は常時監視を除き、その他の業務のうち新機能は別途になることを示す表">
+<text x="160" y="72" fill="#9AA7B4" font-size="24" font-weight="700">ご依頼の業務（募集本文のまま）</text>
+<text x="1090" y="72" fill="#9AA7B4" font-size="24" font-weight="700">今回の扱い</text>
+<g class="node" tabindex="0" data-name="システムの運用・保守" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="100" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,116)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="152" fill="#F2F4F7" font-size="26">システムの運用・保守</text>
+  <text x="1090" y="152" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
 </g>
-<g class="node" tabindex="0" data-name="難しい範囲" data-tip="当方1名のため、夜間・休日の即時対応と、サーバーの常時監視（24時間365日）はお約束できません。代わりに平日日中は当日中、遅くとも翌営業日までに一次回答します。">
-  <rect class="box" x="70" y="380" width="1360" height="220" rx="10" fill="rgba(224,114,74,.08)" stroke="#E0724A" stroke-width="3"/>
-  <g transform="translate(100,402)"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg></g>
-  <text x="184" y="448" fill="#E0724A" font-size="34" font-weight="700">難しい範囲（1つ）</text>
-  <text x="100" y="516" fill="#F2F4F7" font-size="24">サーバーの常時監視・夜間休日の即時対応</text>
-  <text x="100" y="562" fill="#E0724A" font-size="24" font-weight="700">翌営業日までの一次回答でお応えします</text>
+<g class="node" tabindex="0" data-name="不具合発生時の原因調査・対応" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="200" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,216)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="252" fill="#F2F4F7" font-size="26">不具合発生時の原因調査・対応</text>
+  <text x="1090" y="252" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
 </g>
-<g class="node" tabindex="0" data-name="別途になる範囲" data-tip="「その他、サービス運営に伴うシステム関連業務」のうち、新機能の開発・仕様の変更・別システムの新規構築は、内容を伺ってから別途お見積りします。">
-  <rect class="box" x="70" y="640" width="1360" height="190" rx="10" fill="#111825" stroke="#4A586B" stroke-width="3"/>
-  <g transform="translate(100,662)"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></g>
-  <text x="184" y="708" fill="#9AA7B4" font-size="34" font-weight="700">別途になる範囲（1つ）</text>
-  <text x="100" y="780" fill="#F2F4F7" font-size="24">新機能の開発・仕様変更・別システムの新規構築</text>
-  <text x="980" y="780" fill="#C3CDD9" font-size="24" font-weight="700">ご相談のうえお見積り</text>
+<g class="node" tabindex="0" data-name="軽微なプログラム修正" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="300" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,316)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="352" fill="#F2F4F7" font-size="26">軽微なプログラム修正</text>
+  <text x="1090" y="352" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
 </g>
+<g class="node" tabindex="0" data-name="既存機能の改善・修正" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="400" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,416)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="452" fill="#F2F4F7" font-size="26">既存機能の改善・修正</text>
+  <text x="1090" y="452" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
+</g>
+<g class="node" tabindex="0" data-name="システムの動作確認・テスト" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="500" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,516)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="552" fill="#F2F4F7" font-size="26">システムの動作確認・テスト</text>
+  <text x="1090" y="552" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
+</g>
+<g class="node" tabindex="0" data-name="サーバー・システムに関する運用対応" data-tip="サーバーの運用対応はお受けします。ただし当方1名のため、24時間365日の監視と夜間・休日の即時対応はお約束できません。平日日中は当日中、遅くとも翌営業日に一次回答します。">
+  <rect class="box" x="70" y="600" width="1360" height="84" rx="8" fill="rgba(224,114,74,.07)" stroke="#E0724A" stroke-width="2"/>
+  <g transform="translate(88,616)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg></g>
+  <text x="160" y="652" fill="#F2F4F7" font-size="26">サーバー・システムに関する運用対応</text>
+  <text x="1090" y="652" fill="#E0724A" font-size="26" font-weight="700">常時監視は除く</text>
+</g>
+<g class="node" tabindex="0" data-name="セキュリティや安定稼働に関する確認" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="700" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,716)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="752" fill="#F2F4F7" font-size="26">セキュリティや安定稼働に関する確認</text>
+  <text x="1090" y="752" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
+</g>
+<g class="node" tabindex="0" data-name="ユーザーから報告された不具合の調査・対応" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="800" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,816)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="852" fill="#F2F4F7" font-size="26">ユーザーから報告された不具合の調査・対応</text>
+  <text x="1090" y="852" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
+</g>
+<g class="node" tabindex="0" data-name="今後の機能追加・改善に関する技術的な相談" data-tip="月額12万円（月20時間目安）の中で対応します。">
+  <rect class="box" x="70" y="900" width="1360" height="84" rx="8" fill="rgba(212,175,55,.07)" stroke="#8C7526" stroke-width="2"/>
+  <g transform="translate(88,916)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></g>
+  <text x="160" y="952" fill="#F2F4F7" font-size="26">今後の機能追加・改善に関する技術的な相談</text>
+  <text x="1090" y="952" fill="#D4AF37" font-size="26" font-weight="700">月額に含む</text>
+</g>
+<g class="node" tabindex="0" data-name="その他、サービス運営に伴うシステム関連業務" data-tip="新機能の開発・仕様の変更・別システムの新規構築は、内容を伺ってから別途お見積りします。">
+  <rect class="box" x="70" y="1000" width="1360" height="84" rx="8" fill="#111825" stroke="#4A586B" stroke-width="2"/>
+  <g transform="translate(88,1016)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></g>
+  <text x="160" y="1052" fill="#F2F4F7" font-size="26">その他、サービス運営に伴うシステム関連業務</text>
+  <text x="1090" y="1052" fill="#9AA7B4" font-size="26" font-weight="700">新機能は別途</text>
+</g>
+<text x="70" y="1150" fill="#5FB894" font-size="26">8つが月額12万円に含まれます。ご満足いただけなければ全額返金いたします。</text>
+</svg>
+</div>
+</div>
+<h3>図4　月20時間の使い道</h3>
+<div class="figure">
+<div class="svg-holder">
+<svg viewBox="0 0 1500 560" role="img" aria-label="月額12万円の20時間を、受付と切り分け6時間、修正と本番反映8時間、定期の確認3時間、月1の報告3時間に分けた帯グラフ">
+<text x="70" y="80" fill="#D4AF37" font-size="30" font-weight="700">月20時間 ＝ 月額12万円（税別・1時間あたり6,000円）</text>
+<g class="node" tabindex="0" data-name="受付・切り分け（6時間）" data-tip="ご連絡の受付、現象の再現、原因の場所の特定に使います。">
+  <rect class="box" x="70" y="120" width="408" height="190" rx="6" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(88,134)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></g>
+  <text x="88" y="236" fill="#F2F4F7" font-size="30" font-weight="700">6時間</text>
+  <text x="88" y="280" fill="#C3CDD9" font-size="22">受付・切り分け</text>
+</g>
+<g class="node" tabindex="0" data-name="修正・本番反映（8時間）" data-tip="軽微な修正・既存機能の改善と、動作確認のうえでの本番反映に使います。">
+  <rect class="box" x="478" y="120" width="544" height="190" rx="6" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(496,134)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3l3 3-9 9-3-3z"/><path d="M9 12c-3 0-5 2-5 5 0 2-1 3-2 4 4 0 8-1 9-4z"/></svg></g>
+  <text x="496" y="236" fill="#F2F4F7" font-size="30" font-weight="700">8時間</text>
+  <text x="496" y="280" fill="#C3CDD9" font-size="22">修正・本番反映</text>
+</g>
+<g class="node" tabindex="0" data-name="定期の確認（3時間）" data-tip="ログ・動作・セキュリティまわりを定期的に確かめます。">
+  <rect class="box" x="1022" y="120" width="204" height="190" rx="6" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(1040,134)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></g>
+  <text x="1040" y="236" fill="#F2F4F7" font-size="30" font-weight="700">3時間</text>
+  <text x="1040" y="280" fill="#C3CDD9" font-size="22">定期の確認</text>
+</g>
+<g class="node" tabindex="0" data-name="月1の報告（3時間）" data-tip="対応した一覧・使った時間・次に直したい所を1枚にまとめてお渡しします。">
+  <rect class="box" x="1226" y="120" width="204" height="190" rx="6" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
+  <g transform="translate(1244,134)"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></g>
+  <text x="1244" y="236" fill="#F2F4F7" font-size="30" font-weight="700">3時間</text>
+  <text x="1244" y="280" fill="#C3CDD9" font-size="22">月1の報告</text>
+</g>
+<text x="70" y="380" fill="#F2F4F7" font-size="24">使わなかった時間は、翌月へ1か月だけ繰り越せます。</text>
+<text x="70" y="428" fill="#F2F4F7" font-size="24">1か月目はこの20時間で棚卸しを行い、その一覧をご覧いただいた時点で契約をお止めいただけます。</text>
+<text x="70" y="476" fill="#5FB894" font-size="24">ご満足いただけなければ全額返金いたします。</text>
 </svg>
 </div>
 </div>
@@ -339,48 +431,14 @@
     <div class="reading caution">
       <h3><span class="tag">費用</span>月々の費用（御社のご負担）</h3>
       <p>
-        月額12万円（税別）。月20時間が目安で、使わなかった時間は翌月へ1か月だけ繰り越せます。<br>
-        <b>最初の1か月で実際にかかった時間をお渡しし、その数字で案A・案Bをお選びいただけます。</b>
+        月額12万円（税別・月20時間目安）が基本です。1時間6,500円の時間精算もお選びいただけます。<br>
+        <b>最初の1か月で実際にかかった時間をお渡しし、その数字でどちらにするかをお決めいただけます。</b>
       </p>
     </div>
   </section>
 
   <section id="ch4">
     <h2><span class="step">&#9315;</span>進め方とお約束</h2>
-<h3>図4　進み方と、いつ止められるか</h3>
-<div class="figure">
-<div class="svg-holder">
-<svg viewBox="0 0 1500 560" role="img" aria-label="1か月目の棚卸し、2か月目の優先順の修正、3か月目以降の定常運用の3つに分け、1か月目の後で一度ご判断いただける図">
-<defs><marker id="g4a" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 Z" fill="#D4AF37"/></marker></defs>
-<g class="node" tabindex="0" data-name="1か月目 棚卸し" data-tip="システムの構成・つながっている外部サービス・危ない所を洗い出し、優先順を付けた一覧でお渡しします。急ぎの不具合はこの間も対応します。">
-  <rect class="box" x="70" y="50" width="430" height="240" rx="10" fill="rgba(212,175,55,.09)" stroke="#D4AF37" stroke-width="2.5"/>
-  <g transform="translate(96,68)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></g>
-  <text x="96" y="202" fill="#D4AF37" font-size="30" font-weight="700">1か月目　棚卸し</text>
-  <text x="96" y="246" fill="#C3CDD9" font-size="24">危ない所を一覧に</text>
-</g>
-<g class="node" tabindex="0" data-name="2か月目" data-tip="一覧の上から順に直していきます。どれから直すかは御社と一緒に決めます。">
-  <rect class="box" x="540" y="50" width="430" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(566,68)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3l3 3-9 9-3-3z"/><path d="M9 12c-3 0-5 2-5 5 0 2-1 3-2 4 4 0 8-1 9-4z"/></svg></g>
-  <text x="566" y="202" fill="#F2F4F7" font-size="30" font-weight="700">2か月目</text>
-  <text x="566" y="246" fill="#C3CDD9" font-size="24">優先順にお直し</text>
-</g>
-<g class="node" tabindex="0" data-name="3か月目以降" data-tip="ご連絡の受付と改善を毎月回し、月1回、対応一覧と使った時間をお渡しします。">
-  <rect class="box" x="1010" y="50" width="430" height="240" rx="10" fill="#1B2333" stroke="#D4AF37" stroke-width="2"/>
-  <g transform="translate(1036,68)"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></g>
-  <text x="1036" y="202" fill="#F2F4F7" font-size="30" font-weight="700">3か月目以降</text>
-  <text x="1036" y="246" fill="#C3CDD9" font-size="24">受付と改善を毎月</text>
-</g>
-<path d="M504,170 L532,170" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g4a)"/>
-<path d="M974,170 L1002,170" fill="none" stroke="#D4AF37" stroke-width="3" marker-end="url(#g4a)"/>
-<path d="M285,294 L285,336" stroke="#5FB894" stroke-width="3"/>
-<path d="M271,336 L299,336 L285,362 Z" fill="#5FB894"/>
-<text x="90" y="428" fill="#5FB894" font-size="26" font-weight="700">ここで一度ご判断いただけます</text>
-<text x="90" y="474" fill="#F2F4F7" font-size="24">1か月目の一覧をご覧いただいた時点で、契約をお止めいただけます。</text>
-<text x="90" y="516" fill="#5FB894" font-size="24">ご満足いただけなければ全額返金いたします。</text>
-</svg>
-</div>
-</div>
-
     <div class="table-wrap">
       <table>
         <thead><tr><th>項目</th><th>内容</th></tr></thead>
